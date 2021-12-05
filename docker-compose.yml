@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  marketplace:
+    image: postgres
+    ports:
+      - '5432:5432'
+    container_name: 'marketplace'
+    restart: always
+    volumes:
+      - marketplace-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: marketplace
+      POSTGRES_PASSWORD: marketplace
+      POSTGRES_DB: marketplace
+
+volumes:
+  marketplace-data:
