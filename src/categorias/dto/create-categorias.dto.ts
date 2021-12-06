@@ -2,14 +2,14 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateCategoriasDto {
   @ApiProperty()
-  hardwerEntrada: string;
+  hardwerEntrada?: string;
 
   @ApiProperty()
-  hardwerSaida: string;
+  hardwerSaida?: string;
 
   @ApiProperty()
-  hardwerProcessamento: string;
+  hardwerProcessamento?: string;
 
   @ApiProperty()
-  hardwerArmazenamento: string;
+  hardwerArmazenamento?: string;
 }

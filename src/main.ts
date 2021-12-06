@@ -9,6 +9,7 @@ async function bootstrap() {
     .setTitle('app marketplace')
     .setDescription('The app API description')
     .setVersion('1.0')
+    .addTag('vendedor')
     .addTag('app')
     .build();
   const document = SwaggerModule.createDocument(app, config);

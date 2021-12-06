@@ -1,8 +1,10 @@
 import { Controller, Body, Post, Get, Param, Delete } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { Vendedor } from '@prisma/client';
 import { CreateVendedorDto } from './dto/create-vendedor.dto';
 import { VendedorService } from './vendedor.service';
 
+@ApiTags('vendedor')
 @Controller('vendedor')
 export class VendedorController {
   constructor(private service: VendedorService) {}
